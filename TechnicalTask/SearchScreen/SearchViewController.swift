@@ -24,15 +24,15 @@ class SearchViewController: UIViewController {
         listTableView.dataSource = self
         
         searchListVideos = listVideos
-        
     }
-
 }
 
+// MARK: - UITableViewDelegate
 extension SearchViewController: UITableViewDelegate {
     
 }
 
+// MARK: - UITableViewDataSource
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchListVideos.count
@@ -48,6 +48,7 @@ extension SearchViewController: UITableViewDataSource {
     
 }
 
+// MARK: - UISearchBarDelegate
 extension SearchViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchListVideos = listVideos
