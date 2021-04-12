@@ -87,6 +87,17 @@ class StoriesViewController: UIViewController {
         getTopRatedMovies()
     }
     
+    @IBAction func searchButtonTapped(_ sender: UIButton) {
+    let searchStoryboard = UIStoryboard(name: "Search", bundle: nil)
+        if #available(iOS 13.0, *) {
+            guard let searchViewController = searchStoryboard.instantiateViewController(identifier: "SearchViewController") as? SearchViewController else { return }
+            searchViewController.listVideos = movies.map { $0.title }
+            present(searchViewController, animated: true)
+        } else {
+            // Fallback on earlier versions
+        }
+    }
+    
     @IBAction func videoButtonTapped(_ sender: Any) {
         typeVideo = .video
         setupTopView()

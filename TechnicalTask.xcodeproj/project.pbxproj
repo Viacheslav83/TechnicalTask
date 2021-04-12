@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		640129E826243C6800031691 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640129E726243C6800031691 /* SearchViewController.swift */; };
+		640129EB26243C7B00031691 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640129EA26243C7B00031691 /* Search.storyboard */; };
 		64621A2F262211F000556C1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64621A2E262211F000556C1C /* AppDelegate.swift */; };
 		64621A31262211F000556C1C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64621A30262211F000556C1C /* SceneDelegate.swift */; };
 		64621A33262211F000556C1C /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64621A32262211F000556C1C /* StoriesViewController.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		640129E726243C6800031691 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		640129EA26243C7B00031691 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		64621A2B262211F000556C1C /* TechnicalTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnicalTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64621A2E262211F000556C1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64621A30262211F000556C1C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		640129ED26243C8100031691 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				640129E726243C6800031691 /* SearchViewController.swift */,
+				640129EA26243C7B00031691 /* Search.storyboard */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
 		64621A22262211F000556C1C = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				64621A592623682E00556C1C /* MovieScreen */,
+				640129ED26243C8100031691 /* SearchScreen */,
 				64621A5E2623699500556C1C /* Networking */,
 				64621A6926236CA500556C1C /* Extension */,
 				64621A4526221E6000556C1C /* SupportingFiles */,
@@ -192,6 +206,7 @@
 				64621A522622357F00556C1C /* MovieTableViewCell.xib in Resources */,
 				64621A38262211F400556C1C /* Assets.xcassets in Resources */,
 				64621A36262211F000556C1C /* Stories.storyboard in Resources */,
+				640129EB26243C7B00031691 /* Search.storyboard in Resources */,
 				64621A4D2622356200556C1C /* MovieCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640129E826243C6800031691 /* SearchViewController.swift in Sources */,
 				64621A512622357F00556C1C /* MovieTableViewCell.swift in Sources */,
 				64621A33262211F000556C1C /* StoriesViewController.swift in Sources */,
 				64621A60262369E100556C1C /* ServiceResult.swift in Sources */,
