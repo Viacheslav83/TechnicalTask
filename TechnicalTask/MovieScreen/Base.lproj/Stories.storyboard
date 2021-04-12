@@ -151,8 +151,9 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="kyV-ju-Z4i" id="I4q-Vd-p0K"/>
+                        <outlet property="pageControl" destination="8BT-SR-NRF" id="DmY-Tw-jBb"/>
                         <outlet property="tableView" destination="owX-PK-pZl" id="ucB-tH-0Im"/>
-                        <outlet property="topView" destination="cek-SZ-Dq6" id="1jW-af-Lta"/>
+                        <outlet property="topView" destination="cek-SZ-Dq6" id="CM1-kO-Uyd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
